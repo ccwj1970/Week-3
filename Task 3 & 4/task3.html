@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week1-RWD Website</title>
+    <link rel="stylesheet" href="./task3.css" />
+  </head>
+  <body>
+    <!------------------------------------------- 選單 --------------------------------->
+
+    <nav>
+      <ul class="mainpage">
+        <li><a href="#">My Website</a></li>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        <li onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+      </ul>
+    </nav>
+    <!-- 歡迎主頁 -->
+    <div class="parentContainer">
+      <img src="./Taipei 101 .jpeg" alt="wallpaper" />
+      <div class="centered">Welcome to MyHome</div>
+    </div>
+    <!---------------------------------------重點：Small Boxes 圖片取代-------------------------------->
+
+    <div class="container" id="smallbox">
+      <div class="small-box">
+        <img src="" id="imageURL1" />
+        <div id="name1">Promotion 1</div>
+      </div>
+      <div class="small-box">
+        <img src="" id="imageURL2" />
+        <div id="name2">Promotion 2</div>
+      </div>
+      <div class="small-box">
+        <img src="" id="imageURL3" />
+        <div id="name3">Promotion 3</div>
+      </div>
+    </div>
+
+    <!--------------------------------------重點：Big Boxes 圖片取代--------------------------------->
+
+    <div class="grid-container"></div>
+    <!-- 第一組 -->
+    <!-- <div class="box" id="myBox1">
+        <div class="box-text" id="name4">Title 1</div>
+        <span class="star">&#9733;</span>
+      </div> 
+      <div class="box" id="myBox2">
+        <div class="box-text" id="name5">Title 2</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox3">
+        <div class="box-text" id="name6">Title 3</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox4">
+        <div class="box-text-special" id="name7">Title 4</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox5">
+        <div class="box-text" id="name8">Title 5</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox6">
+        <div class="box-text" id="name9">Title 6</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox7">
+        <div class="box-text-special" id="name10">Title 7</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox8">
+        <div class="box-text" id="name11">Title 8</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox9">
+        <div class="box-text" id="name12">Title 9</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox10">
+        <div class="box-text" id="name13">Title 10</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <!-- 第二組 -->
+    <!-- <div class="box" id="myBox11">
+        <div class="box-text" id="name14">Title 11</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox12">
+        <div class="box-text" id="name15">Title 12</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox13">
+        <div class="box-text-special2" id="name16">Title 13</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox14">
+        <div class="box-text" id="name17">Title 14</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox15">
+        <div class="box-text-special2" id="name18">Title 15</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox16">
+        <div class="box-text" id="name19">Title 16</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox17">
+        <div class="box-text" id="name20">Title 17</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox18">
+        <div class="box-text" id="name21">Title 18</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox19">
+        <div class="box-text" id="name22">Title 19</div>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="box" id="myBox20">
+        <div class="box-text-special2" id="name23">Title 20</div>
+        <span class="star">&#9733;</span>
+      </div>
+    </div>  -->
+    <!-- Load More 標籤 -->
+
+    <div class="parent-container">
+      <div id="loadmore" class="load-more">Load More</div>
+    </div>
+    <script src="./task3.js"></script>
+  </body>
+</html>
